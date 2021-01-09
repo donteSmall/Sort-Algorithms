@@ -14,6 +14,24 @@ def bubblesort(unsortedList):
 
 print(bubblesort([4,6,8,3,2,5,7,9]))
 
+def bubbleSortRecursive(unsortedList):
+    indexlength = len(unsortedList) - 1
+    if unsortedList is None:
+        unsortedList = len(unsortedList)
+    
+
+    if len(unsortedList) == 1:
+        return unsortedList
+
+    for idx in range(indexlength - 1):
+        if unsortedList[idx] > unsortedList[idx+1]:
+            unsortedList[idx],unsortedList[idx+1] = unsortedList[idx+1], unsortedList[idx]
+    
+    return bubbleSortRecursive(indexlength-1)
+
+
+print(bubbleSortRecursive([4,6,8,3,2,5,7,9]))
+
 '''
 Step by Step iteration:
 
