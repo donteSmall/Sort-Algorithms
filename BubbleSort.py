@@ -1,36 +1,43 @@
-def bubblesort(unsortedList):
-    indexlength = len(unsortedList) - 1
+def bubblesort(arr):
+    indexlength = len(arr) - 1
     breakSort = False
    
    #Used when num of iteration is unknown
     while not breakSort:
         breakSort = True
         for idx in range(0,indexlength):
-            if unsortedList[idx] > unsortedList[idx+1]:
+            if arr[idx] > arr[idx+1]:
                 breakSort = False
-                unsortedList[idx],unsortedList[idx+1] = unsortedList[idx+1], unsortedList[idx]
+                arr[idx],arr[idx+1] = arr[idx+1], arr[idx]
 
-    return unsortedList
+    return arr
 
 print(bubblesort([4,6,8,3,2,5,7,9]))
 
-def bubbleSortRecursive(unsortedList):
-    indexlength = len(unsortedList) - 1
-    if unsortedList is None:
-        unsortedList = len(unsortedList)
-    
+'''
+Explain why the second paramater is 
+need in for recursive version
+'''
+def bubbleSortRecursive(arr, lengthOfList): 
+ 
+        # Base case
+        if lengthOfList == 1:
+            return "Length of list equals 1: " +str(arr)
+ 
+        # One pass of bubble sort. After
+        # this pass, the largest element
+        # is moved (or bubbled) to end.
+        for i in range(len(unsortedList) - 1):
+            if arr[i] > arr[i + 1]:
+                arr[i], arr[i +1] = arr[i + 1],arr[i]
+ 
+        # Largest element is fixed,
+        #  recur for remaining array
+        return bubbleSortRecursive(arr, lengthOfList - 1)
 
-    if len(unsortedList) == 1:
-        return unsortedList
+unsortedList= [4,6,8,3,2,5,7,9]
 
-    for idx in range(indexlength - 1):
-        if unsortedList[idx] > unsortedList[idx+1]:
-            unsortedList[idx],unsortedList[idx+1] = unsortedList[idx+1], unsortedList[idx]
-    
-    return bubbleSortRecursive(indexlength-1)
-
-
-print(bubbleSortRecursive([4,6,8,3,2,5,7,9]))
+print(bubbleSortRecursive(unsortedList,len(unsortedList)))
 
 '''
 Step by Step iteration:
