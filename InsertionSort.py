@@ -12,6 +12,7 @@ Explaination :
 
 def insertionSort(arr):
     idxLength = range(1, len(arr))
+    
     for idx in idxLength:
         val_To_Sort = arr[idx]
 

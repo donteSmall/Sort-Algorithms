@@ -15,10 +15,10 @@ def mergeSort(arr):
     if len(arr) <= 1:
         return arr
     
-    mid = len(arr)//2
+    midPoint = len(arr)//2
 
-    right = arr[:mid]
-    left = arr[mid:]
+    right = arr[:midPoint ]
+    left = arr[midPoint:]
     #recursive call on left & right parts of array
     # By default, mergeSort returns a sorted array
     left = mergeSort(left)

@@ -1,4 +1,5 @@
 def binary_search(arr, item):
+    
     begin_idx = 0 
     end_idx = len(arr) - 1
 
