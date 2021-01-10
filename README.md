@@ -12,7 +12,11 @@
 | Insert| O(n^2) |  Yes | Yes | O(n) in best case
 
 
-| First Header  | Second Header | Second Header | Second Header |
-| ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Sort Type     | Av.Complexity |   Stable      |  inplace      |      Note     |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|    Quick      |  O(n log n)   | Content Cell  | Content Cell  | Content Cell  |
+|    Merge      |  O(n log n)   | Content Cell  | Content Cell  | Content Cell  |
+|    Heap       |  O(n log n)   | Content Cell  | Content Cell  | Content Cell  |
+|    Select     |  O(n^2)       | Content Cell  | Content Cell  | Content Cell  |
+|    Bubble     |  O(n^2)       | Content Cell  | Content Cell  | Content Cell  |
+|    Insert     |  O(n^2)       | Content Cell  | Content Cell  | Content Cell  |
