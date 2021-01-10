@@ -24,7 +24,7 @@ listOfItems= [5,6,7,8,9,8,7,6,5,6,7,8, 9, 0]
 print(quick_sort(listOfItems))
 
 '''
-Step by Step iteration:
+Step by Step iteration of swap of index values:
 
 if item < pivot:
 
