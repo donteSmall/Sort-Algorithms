@@ -2,6 +2,7 @@
 
 `A sorting algorithm is said to be stable if two objects with equal keys appear in the same order in sorted output as they appear in the input array to be sorted.`
 
+`An in-place algorithm is an algorithm which transforms input using no auxiliary data structure`
 
 
 | Sort Type     | Av.Complexity |   Stable      |  Inplace      |      Note     |
