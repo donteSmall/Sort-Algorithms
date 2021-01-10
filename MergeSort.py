@@ -2,7 +2,7 @@
 Two Sorted Arrays
 [13,21,42,54]   [3,12,34,44]
 
-          []
+          [3,12,13,21,34,42,44,54]
 Naive Implemenation Steps : 
 1) Start with comparing the first element in each of the arrays
 2) Place smaller element into sorted array, the increment pointer to next index
@@ -67,7 +67,7 @@ if __name__ == '__main__':
     # arr_A = [5,8,12,56]
     # arr_B = [7,9,45,51]
     # #Test Case for uneven length of arrays
-    
+
     # arr_Aa = [5,8,12,56, 89, 100]
     # arr_Bb = [7,9,45,51]
 
